@@ -1,0 +1,288 @@
+premom-FAM-study/
+  index.html
+  assets/
+    img/
+      how-to-participate.png
+      markers.png
+      hero-poster.png
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Track Ovulation with Science-Backed Fertility Signs | Ottawa Study</title>
+  <meta name="description" content="Free fertility tracking research study (Ottawa area) for Premom app users. Track LH, PdG, BBT, and cervical mucus for 3 cycles. Supplies provided." />
+  <style>
+    :root{
+      --bg:#fbf7ff;
+      --card:#ffffff;
+      --text:#1f1f2e;
+      --muted:#5b5b74;
+      --accent:#6a3df0;
+      --accent2:#f0b429;
+      --border:rgba(31,31,46,.10);
+      --shadow:0 10px 30px rgba(31,31,46,.10);
+      --radius:18px;
+      --max:1040px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, #ffeef5 0%, transparent 55%),
+                  radial-gradient(1000px 600px at 80% 0%, #eef3ff 0%, transparent 60%),
+                  var(--bg);
+      line-height:1.5;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    header{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:center;
+      margin-top:10px;
+    }
+    @media (max-width:900px){
+      header{grid-template-columns:1fr}
+    }
+    .badge{
+      display:inline-flex; gap:10px; align-items:center;
+      background: rgba(106,61,240,.10);
+      border:1px solid rgba(106,61,240,.18);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:600;
+      width:fit-content;
+    }
+    h1{
+      font-size: clamp(30px, 4vw, 46px);
+      line-height:1.08;
+      margin:14px 0 10px;
+      letter-spacing:-.5px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size: 18px;
+      margin:0 0 18px;
+      max-width: 60ch;
+    }
+    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; margin:14px 0 4px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:700;
+      border:1px solid var(--border);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      cursor:pointer;
+    }
+    .btn.primary{
+      background: var(--accent);
+      color:white;
+      border-color: rgba(106,61,240,.35);
+    }
+    .btn.primary:hover{filter:brightness(1.02)}
+    .btn.secondary{
+      background: rgba(240,180,41,.14);
+      border-color: rgba(240,180,41,.30);
+      color: var(--text);
+      box-shadow:none;
+    }
+    .fineprint{color:var(--muted); font-size:13px; margin-top:10px}
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .heroImg{
+      width:100%;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      box-shadow: var(--shadow);
+      background:white;
+    }
+    section{margin-top:18px}
+    .grid2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width:900px){
+      .grid2{grid-template-columns:1fr}
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:22px;
+      letter-spacing:-.2px;
+    }
+    ul{margin:10px 0 0; padding-left:18px}
+    li{margin:6px 0}
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      background: rgba(106,61,240,.08);
+      border:1px solid rgba(106,61,240,.14);
+      border-radius:999px;
+      font-weight:650;
+      margin: 0 8px 8px 0;
+      color: var(--accent);
+      font-size:13px;
+    }
+    .imgBlock img{
+      width:100%;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
+      background:white;
+    }
+    .footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .callout{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+      padding:12px 14px;
+      border-radius:14px;
+      background: rgba(106,61,240,.08);
+      border: 1px solid rgba(106,61,240,.14);
+      margin-top:12px;
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+    .divider{height:1px; background:var(--border); margin:12px 0}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div>
+        <div class="badge">🌸 Free Study – Ottawa area</div>
+        <h1>Track Ovulation with Science-Backed Fertility Signs</h1>
+        <p class="sub">
+          Do you already use the <strong>Premom</strong> fertility app to track your cycle?
+          You’re invited to join an ethics-approved fertility tracking research study led by a local physician in Ottawa.
+          This study looks at how four key fertility signs work together to pinpoint ovulation more accurately — the same signs many women already use at home.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="mailto:drleivampcresearch@rogers.com?subject=Premom%20Study%20Eligibility%20Check&body=Hello%2C%0A%0AI%20am%20interested%20in%20the%20Premom%20fertility%20tracking%20study.%20Please%20contact%20me%20for%20a%20quick%20eligibility%20check.%0A%0AName%3A%0APhone%20(optional)%3A%0A" aria-label="Email to sign up">
+            ✉️ Email for eligibility check
+          </a>
+          <a class="btn secondary" href="https://clinicaltrials.gov/study/NCT07248046" target="_blank" rel="noopener">
+            🔗 ClinicalTrials.gov registration
+          </a>
+        </div>
+
+        <div class="callout">
+          <span class="pill">Supplies provided</span>
+          <span class="pill">5–10 min/day</span>
+          <span class="pill">3 cycles</span>
+          <span class="pill">Premom App users</span>
+        </div>
+
+        <p class="fineprint">
+          Participation is voluntary, confidential, and you may withdraw at any time.
+        </p>
+      </div>
+
+      <div>
+        <img class="heroImg" src="assets/img/hero-poster.png" alt="Join our fertility tracking study poster" />
+      </div>
+    </header>
+
+    <section class="grid2">
+      <div class="card">
+        <h2>🔬 The four fertility markers we study</h2>
+        <ul>
+          <li>✨ <strong>LH (Ovulation hormone)</strong> – signals when ovulation is likely to happen soon</li>
+          <li>✨ <strong>PdG (Progesterone metabolite)</strong> – confirms that ovulation already occurred</li>
+          <li>✨ <strong>Cervical mucus</strong> – your body’s natural sign that fertility is increasing</li>
+          <li>✨ <strong>Basal Body Temperature (BBT)</strong> – shows the temperature rise after ovulation</li>
+        </ul>
+        <div class="divider"></div>
+        <p style="margin:0;color:var(--muted)">
+          By tracking all four together, you can better understand when ovulation happens and how long your post-ovulation phase lasts.
+        </p>
+      </div>
+
+      <div class="imgBlock">
+        <img src="assets/img/markers.png" alt="LH, PdG, BBT, Cervical mucus markers graphic" />
+      </div>
+    </section>
+
+    <section class="grid2">
+      <div class="card">
+        <h2>💡 Why join?</h2>
+        <ul>
+          <li>✔ Learn more about your own cycle and ovulation timing</li>
+          <li>✔ See how different fertility signs line up in your body</li>
+          <li>✔ Receive <strong>FREE</strong> LH &amp; PdG test strips and a thermometer</li>
+          <li>✔ Gain confidence using fertility awareness tools</li>
+          <li>✔ Help improve fertility tracking for other women</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>📅 What’s involved?</h2>
+        <ul>
+          <li>✔ Track fertility signs daily for 3 consecutive menstrual cycles</li>
+          <li>✔ Use LH &amp; PdG urine tests, BBT, and cervical mucus observations</li>
+          <li>✔ Record results in the Premom App and online in a secured server</li>
+          <li>✔ Takes about 5–10 minutes per day</li>
+          <li>✔ All supplies provided at no cost</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid2">
+      <div class="imgBlock">
+        <img src="assets/img/how-to-participate.png" alt="How to participate graphic" />
+      </div>
+
+      <div class="card">
+        <h2>✅ You may be eligible if you:</h2>
+        <ul>
+          <li>✔ Are 16–45 years old</li>
+          <li>✔ Have cycles ≤35 days</li>
+          <li>✔ Are not pregnant and not on fertility or hormone treatment</li>
+          <li>✔ Have been off hormonal contraception for ≥3 months</li>
+          <li>✔ Already use the Premom App (<span class="mono">premom.com/fertility-app</span>)</li>
+          <li>✔ Live within ~50 km of Ottawa</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2 style="margin-top:0">📩 Interested?</h2>
+        <p style="margin:0 0 10px;">
+          Email: <a href="mailto:drleivampcresearch@rogers.com">drleivampcresearch@rogers.com</a><br/>
+          for a quick eligibility check.
+        </p>
+
+        <p class="fineprint" style="margin:0">
+          💜 Thank you for helping advance women’s health<br/>
+          <strong>René Leiva, MD</strong><br/>
+          Principal Investigator (Bruyere Research Institute)
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p style="margin:0">
+        Learn more: <a href="https://drleiva.github.io/premom-FAM-study/" target="_blank" rel="noopener">drleiva.github.io/premom-FAM-study/</a>
+        • Registered on <a href="https://clinicaltrials.gov/study/NCT07248046" target="_blank" rel="noopener">ClinicalTrials.gov</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
